@@ -1,9 +1,31 @@
-/* let images = document.querySelectorAll(".slider img");
+const navToggle = document.querySelector('.nav-toggle'),
+      buttons = document.querySelectorAll('.nav-toggle-buttons');
 
-function slider() {
-    images.forEach(item => {
-    item.classList.toggle('innactive');
-    }, 3000);
+navToggle.addEventListener('click', (e) => {
+    const target = e.target;
+
+    target.classList.add('hide', 'fade');
+    target.classList.remove('show');
+
+    showNavToggleButtons();
+});
+
+buttons.addEventListener('click', (e) => {
+    const target = e.target;
+    console.log(target);
+    hideNavToggleButtons();
+});
+
+function showNavToggleButtons() {
+    buttons.forEach ((item) => {
+        item.classList.remove('hide');
+        item.classList.add('show', 'fade');
+    });
 }
 
-slider(); */
+function hideNavToggleButtons() {
+    buttons.forEach ((item) => {
+        item.classList.add('hide', 'fade');
+        item.classList.remove('show');
+    });
+}
