@@ -59,7 +59,7 @@ button {
 }
 
 .banner-text {
-    margin: 90px 5% 0 5%;
+    margin: 90px 5% 20px 5%;
     color: white;
     text-align: center;
 }
@@ -67,6 +67,11 @@ button {
 .banner-text h1 {
     font-size: 2em;
 }
+
+.banner-text p {
+    margin: 0;
+}
+
 
 .banner-inputs {
     width: 100%;
@@ -132,12 +137,13 @@ button {
     margin-bottom: 150px;
 }
 
-.service-text {
+.service-text, .service-text p{
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0;
 }
 
 .service-items {
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -195,11 +201,17 @@ button {
 }
 
 .price-list {
-    margin: 150px;
+    background: #e7edf3;
     color: #394b50;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.price-list-text {
+    margin-top: 150px;
+}
 .price-list-text p{
     margin: 0;
 }
@@ -209,6 +221,7 @@ button {
     margin: 100px 20%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .plans-item {
@@ -265,6 +278,78 @@ button {
 .plans-item-text p{
     font-size: 14px;
     margin: 10px;
+}
+
+.plans-item:hover {
+    width: 33%;
+    height: 450px;
+    background: #709dca;
+    color: white; 
+}
+
+.plans-item:hover p {
+    color: white;
+}
+
+.how-it-works {
+    margin: 0 15%;
+    width: 70%;
+    color: #394b50;
+}
+
+.how-it-works-text{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.how-it-works-text p {
+    margin: 0;
+}
+
+.arrow-top {
+    margin: 100px 23% 0 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-it-works-items {
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works-items-text {
+    text-align: center;
+    margin: 70px 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items-text {
+    margin: 0 4%;
+}
+
+.items-text p {
+    font-size: 14px;
+}
+
+.how-it-works-button {
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works-button button{
+    background: #ffbb42;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3%;
 }
 
 @media (max-width: 1100px) {
@@ -337,21 +422,42 @@ button {
     }
 
     .price-list {
-        margin: 100px;
         color: #394b50;
         text-align: center;
+    }
+
+    .price-list-text {
+        margin-top: 70px;
     }
 
     .plans {
         width: 90%;
         margin: 70px auto;
-        padding-left: 30px;
         display: flex;
         flex-wrap: wrap;
     }
+
+    .how-it-works {
+        margin: 0 5%;
+        width: 90%;
+    }
+    
+    .arrow-top {
+        margin: 100px 20% 0 20%;
+    }
+    
+    .how-it-works-items {
+        margin: 0 10%;
+    }
+    
+    .how-it-works-items-text {
+        margin: 70px 2%;
+    }
+    
 }
 
-@media (max-width: 828px) {
+@media (max-width: 834px) {
+
     .slider-img {
         width: 60%;
         margin-bottom: -40px;
@@ -361,22 +467,70 @@ button {
         margin: 150px 5% 0 5%;
     }
 
-    .about-us-text {
-        margin: auto 5% auto 8%;
+    .about-us {
+        margin-top: 40px;
     }
 
-    .price-list {
-        margin: 70px;
+    .about-us-text {
+        margin: auto 5% auto 8%;
     }
 
     .plans {
         width: 100%;
         margin: 70px 0;
-        padding-left: 15px;
+    }
+
+    .how-it-works {
+        margin: 0 5%;
+        width: 90%;
+    }
+    
+    .arrow-top {
+        margin: 100px 15% 0 15%;
+    }
+
+    .arrow-top img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .arrow-bottom img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .how-it-works-items img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .how-it-works-items {
+        margin: 0 5%;
+    }
+    
+    .how-it-works-items-text {
+        margin: 70px 0 40px 0;
+    }
+
+    .items-text:first-child {
+        margin-left: 0;
+    }
+
+    .items-text:last-child {
+        margin-right: 0;
+    }
+
+    .items-text {
+        margin: 5%;
     }
 }
 
 @media (max-width: 500px) {
+
+    .header img {
+        width: 43px;
+        height: 43px;
+    }
 
     .slider-img {
         margin-bottom: -25px;
@@ -401,49 +555,83 @@ button {
 
     .about-us-text {
         width: 100%;
-        margin: auto 10%;
+        margin: 50px 10%;
         text-align: center;
-    }
-
-    .price-list {
-        margin: 70px 0;
     }
 
     .plans {
         width: 100%;
         margin: 50px 0;
-        padding-left: 7px;
     }
 
     .plans-item {
         width: 30%;
-        height: 300px;
+        height: 280px;
     }
     
     .plans-item-title {
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .price {
-        font-size: 40px;
+        font-size: 34px;
     }
     
     .price-month {
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .plans-item button {
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .dollar-sign {
-        font-size: 28px;
+        font-size: 22px;
     }
     
     .plans-item-text p{
         font-size: 10px;
         margin: 5px;
+    }
+
+    .how-it-works-text {
+        margin-top: 70px;
+    }
+    
+    .arrow-top {
+        margin: 50px 14% 0 14%;
+    }
+
+    .arrow-top img {
+        width: 80px;
+        height: 20px;
+    }
+
+    .arrow-bottom img {
+        width: 80px;
+        height: 20px;
+    }
+
+    .how-it-works-items img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .how-it-works-items {
+        margin: 0 4%;
+    }
+    
+    .how-it-works-items-text {
+        margin: 20px 0 20px 0;
+    }
+
+    .items-text {
+        margin: 5%;
+    }
+
+    .items-text p {
+        font-size: 10px;
     }
 }
 

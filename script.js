@@ -1,5 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle'),
-      buttons = document.querySelectorAll('.nav-toggle-buttons');
+      buttons = document.querySelectorAll('.nav-toggle-buttons'),
+      plansItem = document.querySelectorAll('.plans-item');
 
 navToggle.addEventListener('click', (e) => {
     const target = e.target;
@@ -7,24 +8,47 @@ navToggle.addEventListener('click', (e) => {
     target.classList.add('hide', 'fade');
     target.classList.remove('show');
 
-    showNavToggleButtons();
+    showElements(buttons);
 });
 
-buttons.addEventListener('click', (e) => {
+buttons.forEach((item) => {
+    item.addEventListener('click', (e) => {
     const target = e.target;
-    console.log(target);
-    hideNavToggleButtons();
+
+        hideElements(buttons);
+        navToggle.classList.remove('hide', 'fade');
+        navToggle.classList.add('show', 'fade');
+    });
 });
 
-function showNavToggleButtons() {
-    buttons.forEach ((item) => {
-        item.classList.remove('hide');
+
+plansItem.forEach((item) => {
+    item.addEventListener('mouseover', (e) => {
+        const target = e.target;
+
+        target.classList.add('fade');
+    });
+});
+
+plansItem.forEach((item) => {
+    item.addEventListener('mouseout', (e) => {
+        const target = e.target;
+
+        target.classList.remove('fade');
+    });
+});
+
+
+function showElements(element) {
+    element.forEach ((item) => {
+
+        item.classList.remove('hide', 'fade');
         item.classList.add('show', 'fade');
     });
 }
 
-function hideNavToggleButtons() {
-    buttons.forEach ((item) => {
+function hideElements(element) {
+    element.forEach ((item) => {
         item.classList.add('hide', 'fade');
         item.classList.remove('show');
     });
