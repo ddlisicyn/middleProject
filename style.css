@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap');
 
 * {
     margin: 0;
@@ -72,8 +72,7 @@ button {
     margin: 0;
 }
 
-
-.banner-inputs {
+.banner-inputs, .newsletter-inputs {
     width: 100%;
     margin-top: 30px;
     display: flex;
@@ -81,11 +80,11 @@ button {
     justify-content: center;
 }
 
-.banner-inputs-item1 {
+.banner-inputs-item1, .newsletter-inputs-item1 {
     background: url(img/user.jpg) no-repeat 10px white;
 }
 
-.banner-inputs-item2 {
+.banner-inputs-item2, .newsletter-inputs-item2 {
     background: url(img/email.jpg) no-repeat 10px white;
 }
 
@@ -93,7 +92,7 @@ button {
     background: url(img/phone.jpg) no-repeat 10px white;
 }
 
-.banner-inputs-item1, .banner-inputs-item2, .banner-inputs-item3 {
+.banner-inputs-item1, .banner-inputs-item2, .banner-inputs-item3, .newsletter-inputs-item1, .newsletter-inputs-item2 {
     width: 250px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     border: none;
@@ -105,7 +104,7 @@ button {
     margin: 5px;
 }
 
-.banner-inputs button {
+.banner-inputs button, .newsletter-inputs button {
     width: 285px;
     height: 40px;
     background: #ffbb42;
@@ -218,7 +217,8 @@ button {
 
 .plans {
     width: 60%;
-    margin: 100px 20%;
+    height: 500px;
+    margin: 70px 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -233,13 +233,15 @@ button {
     border-radius: 2%;
     text-align: center;
     color: #b5bbc1;
-    margin: 5px;
+    margin: auto 5px;
+    transition: 1s;
 }
 
 .plans-item-title {
     font-size: 24px;
     font-weight: 300;
     color: #818b95;
+    transition: 1s;
 }
 
 .price {
@@ -280,15 +282,21 @@ button {
     margin: 10px;
 }
 
-.plans-item:hover {
+.plans-item:hover{
     width: 33%;
     height: 450px;
     background: #709dca;
     color: white; 
+    transition: 1s;
 }
 
 .plans-item:hover p {
     color: white;
+}
+
+.plans-item:hover .plans-item-title {
+    transition: 1s;
+    margin-top: 45px;
 }
 
 .how-it-works {
@@ -352,6 +360,170 @@ button {
     border-radius: 3%;
 }
 
+.happy-clients {
+    margin: 100px 0;
+    background: #ffc155;
+    color: white;
+}
+
+.happy-clients-text {
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+.happy-clients-text p {
+    margin: 0;
+}
+
+.happy-clients-items {
+    width: 80%;
+    margin: 50px 10% 150px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.happy-clients-item {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: #7b7b7b;
+    padding: 50px 25px;
+    margin: 10px 0;
+    border-radius: .5%;
+}
+
+.happy-clients-item img {
+    width: 50%;
+    height: 70%;
+}
+
+.happy-clients-item-text p{
+    text-align: left;
+    margin: 0 5%;
+}
+
+.person-name {
+    margin: 5% 0;
+    color: #f78d58;
+}
+
+.position {
+    color: #99a9ae;
+}
+
+.newsletter {
+    margin: 0 15%;
+}
+
+.newsletter-text {
+    text-align: center;
+    color:#394b50;
+}
+
+.newsletter-text p {
+    margin: 0;
+}
+
+.newsletter-content {
+    margin: 50px 0;
+    background-image: url(img/map.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: content-box;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-information {
+    margin: 3.5% 40%;
+    padding: 5% 4%;
+    width: 15%;
+    background: #394b50;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.circle-information p {
+    margin: 5px 0;
+    color: #a2abae;
+    font-size: 14px;
+}
+
+.circle-information h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.mail {
+    color: #ffbb42;
+}
+
+.newsletter img {
+    margin: 0 49%;
+}
+
+.just-empty {
+    margin: 130px;
+}
+
+.newsletter hr {
+    margin: 0;
+    color:rgba(0, 0, 0, .2);
+}
+
+.contacts {
+    margin: 70px 15%;
+    color: #394b50;
+}
+
+.contacts-buttons {
+    margin: 0 20%;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+}
+
+.contacts-buttons p {
+    cursor: pointer;
+}
+
+.telephone-number {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.telephone-number img {
+    width: 16px;
+    height: 17px;
+    padding-top: 6px;
+    margin-right: 7px;
+}
+
+.telephone-number p {
+    margin: 0;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+}
+
+.social-networks img {
+    margin: 0 10px;
+}
+
+.social-networks img:last-child {
+    width: 16px;
+    height: 15px;
+}
+
 @media (max-width: 1100px) {
 
     .header {
@@ -368,7 +540,7 @@ button {
         color: #709dca;
     }
 
-    .nav-toggle-buttons {
+    .menu {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -453,6 +625,22 @@ button {
     .how-it-works-items-text {
         margin: 70px 2%;
     }
+
+    .happy-clients-items {
+        width: 90%;
+        margin: 50px 5% 150px 5%;
+    }
+    
+    .happy-clients-item {
+        width: 43%;
+        padding: 50px 25px;
+        margin: 10px 0;
+    }
+
+    .happy-clients-item img {
+        width: 35%;
+        height: 50%;
+    }
     
 }
 
@@ -522,6 +710,13 @@ button {
 
     .items-text {
         margin: 5%;
+    }
+    
+    .happy-clients-item {
+        width: 40%;
+        padding: 35px 25px;
+        margin: 10px 0;
+        font-size: 12px;
     }
 }
 
@@ -632,6 +827,22 @@ button {
 
     .items-text p {
         font-size: 10px;
+    }
+
+    .happy-clients-items {
+        width: 90%;
+        margin: 50px 5% 150px 5%;
+    }
+    
+    .happy-clients-item {
+        width: 90%;
+        padding: 30px 15px;
+        margin: 10px 0;
+    }
+
+    .happy-clients-item img {
+        width: 35%;
+        height: 50%;
     }
 }
 

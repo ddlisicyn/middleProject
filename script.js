@@ -1,13 +1,16 @@
 const navToggle = document.querySelector('.nav-toggle'),
+      menu = document.querySelector('.menu'),
       buttons = document.querySelectorAll('.nav-toggle-buttons'),
-      plansItem = document.querySelectorAll('.plans-item');
+      plansItem = document.querySelectorAll('.plans-item'),
+      screenWidth = window.outerWidth;
 
 navToggle.addEventListener('click', (e) => {
     const target = e.target;
 
     target.classList.add('hide', 'fade');
     target.classList.remove('show');
-
+    menu.classList.remove('hide');
+    menu.classList.add('show');
     showElements(buttons);
 });
 
@@ -17,26 +20,22 @@ buttons.forEach((item) => {
 
         hideElements(buttons);
         navToggle.classList.remove('hide', 'fade');
+        menu.classList.remove('show');
+        menu.classList.add('hide');
         navToggle.classList.add('show', 'fade');
     });
 });
 
-
-plansItem.forEach((item) => {
-    item.addEventListener('mouseover', (e) => {
-        const target = e.target;
-
-        target.classList.add('fade');
+if (screenWidth <= 1100) {
+    window.addEventListener('click', (e) => {
+        if (e.target !== menu && e.target !== navToggle) {
+            menu.classList.remove('show');
+            menu.classList.add('hide');
+            navToggle.classList.remove('hide', 'fade');
+            navToggle.classList.add('show', 'fade');
+        }
     });
-});
-
-plansItem.forEach((item) => {
-    item.addEventListener('mouseout', (e) => {
-        const target = e.target;
-
-        target.classList.remove('fade');
-    });
-});
+}
 
 
 function showElements(element) {
