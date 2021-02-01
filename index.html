@@ -8,32 +8,34 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <img src="img/logo.png" alt="logo-image">
-            <nav>
-                <button>HOME</button>
-                <button>SERVICE</button>
-                <button>ABOUT US</button>
-                <button>PRICING TABLE</button>
-                <button>HOW IT WORK</button>
-                <button>HAPPY CLIENTS</button>
-                <button>CONTACT US</button>
-            </nav>
-            <div class="nav-toggle">
-                Menu
-            </div>
-            <div class="menu hide">
-                <div class="nav-toggle-buttons hide">
-                    <p>HOME</p>
-                    <p>SERVICE</p>
-                    <p>ABOUT US</p>
-                    <p>PRICING TABLE</p>
-                    <p>HOW IT WORK</p>
-                    <p>HAPPY CLIENTS</p>
-                    <p>CONTACT US</p>
+        <div class="header-wrapper">
+            <header class="header">
+                <img src="img/logo.png" alt="logo-image">
+                <nav class="nav">
+                    <button>HOME</button>
+                    <button>SERVICE</button>
+                    <button>ABOUT US</button>
+                    <button>PRICING TABLE</button>
+                    <button>HOW IT WORK</button>
+                    <button>HAPPY CLIENTS</button>
+                    <button>CONTACT US</button>
+                </nav>
+                <div class="nav-toggle">
+                    Menu
                 </div>
-            </div>
-        </header>
+                <div class="menu hide">
+                    <div class="nav-toggle-buttons hide">
+                        <p>HOME</p>
+                        <p>SERVICE</p>
+                        <p>ABOUT US</p>
+                        <p>PRICING TABLE</p>
+                        <p>HOW IT WORK</p>
+                        <p>HAPPY CLIENTS</p>
+                        <p>CONTACT US</p>
+                    </div>
+                </div>
+            </header>
+        </div>
         <div class="banner">
             <div class="container">
                 <div class="banner-text">
@@ -48,11 +50,16 @@
                     <button>REQUEST A QUOTE</button>
                 </div>
                 <div class="slider">
-                    <img class ="slider-img" src="img/laptop.png" alt="laptop-img">
-                    <img class="slider-img innactive" src="img/ipad.png" alt="tablet-img">
-                    <img class="slider-img innactive" src="img/iphone.png" alt="smartphone-img">
+                    <img class ="slider-img show" src="img/laptop.png" alt="laptop-img">
+                    <img class="slider-img hide" src="img/ipad.png" alt="tablet-img">
+                    <img class="slider-img hide" src="img/iphone.png" alt="smartphone-img">
                 </div>
             </div>
+        </div>
+        <div class="slider-point">
+            <div class="circle-slider active"></div>
+            <div class="circle-slider"></div>
+            <div class="circle-slider"></div>
         </div>
         <div class="service">
             <div class="service-text">
@@ -325,10 +332,10 @@
                 <p>+987 9976 999</p>
             </div>
             <div class="social-networks">
-                <img src="img/twitter.png" alt="">
-                <img src="img/facebook.png" alt="">
-                <img src="img/gmail.png" alt="">
-                <img src="img/linkedin.png" alt="">
+                <a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://plus.google.com" target="_blank"><img src="img/gmail.png" alt="gmail"></a>
+                <a href="https://www.linkedin.cn" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a>
             </div>
         </div>
     </div>

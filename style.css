@@ -12,8 +12,14 @@
     justify-content: center;
 }
 
+.header-wrapper{
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
 .header {
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,13 +27,13 @@
 }
 
 .header img {
-    margin: 25px 0;
+    margin: 10px 0;
     width: 53px;
     height: 53px;
 }
 
 .header nav, .nav-toggle {
-    margin: 28.5px 0;
+    margin: 10px 0;
 }
 
 .header nav button {
@@ -46,6 +52,7 @@ button {
 .header nav button:hover {
     background: #ffbb42;
     color: white;
+    transition: .5s;
 }
 
 .nav-toggle {
@@ -121,19 +128,39 @@ button {
     justify-content: center;
 }
 
-.slider-img {
-    width: 40%;
-    margin-bottom: -70px;
+.slider-point {
+    width: 4%;
+    margin: 100px 48% 0px 48%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.innactive {
-    display: none;
+.circle-slider {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 2px solid #dedfe0;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.active {
+    border: 2px solid #20aade;
+}
+
+.circle-slider:hover {
+    border: 2px solid #20aade;
+    transition: .5s;
+}
+
+.slider-img {
+    width: 40%;
+    margin-bottom: -75px;
 }
 
 .service {
-    margin: 250px 15% 0 15%;
+    margin: 150px 15%;
     color: #394b50;
-    margin-bottom: 150px;
 }
 
 .service-text, .service-text p{
@@ -481,6 +508,7 @@ button {
 }
 
 .contacts-buttons {
+    width: 60%;
     margin: 0 20%;
     display: flex;
     flex-direction:  row;
@@ -516,12 +544,7 @@ button {
 }
 
 .social-networks img {
-    margin: 0 10px;
-}
-
-.social-networks img:last-child {
-    width: 16px;
-    height: 15px;
+    margin: 0 8px;
 }
 
 @media (max-width: 1100px) {
@@ -531,6 +554,9 @@ button {
     }
 
     .nav-toggle {
+        position: absolute;
+        right: 5%;
+        top: 25%;
         display: block;
         color: #868686;
         cursor: pointer;
@@ -544,8 +570,8 @@ button {
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: 5%;
-        top: 5%;
+        right: 2%;
+        top: 25%;
         background: white;
         color: #868686;
         border: rgba(0, 0, 0, .2);
@@ -572,6 +598,16 @@ button {
 
     .slider-img {
         margin-bottom: -40px;
+    }
+
+    .slider-point {
+        width: 6%;
+        margin: 60px 47% 0px 47%;
+    }
+
+    .circle-slider {
+        width: 10px;
+        height: 10px;
     }
 
     .service {
@@ -641,6 +677,36 @@ button {
         width: 35%;
         height: 50%;
     }
+
+    .newsletter {
+        margin: 0 5%;
+    }
+
+    .newsletter-content {
+        padding: 0 10%;
+    }
+    
+    .circle-information {
+        margin: 3.5% 37%;
+        width: 20%;
+    }
+    
+    .newsletter img {
+        margin: 0 48%;
+    }
+    
+    .just-empty {
+        margin: 55px;
+    }
+    
+    .contacts {
+        margin: 50px 5%;
+        color: #394b50;
+    }
+    
+    .contacts-buttons {
+        display: none;
+    }
     
 }
 
@@ -648,7 +714,7 @@ button {
 
     .slider-img {
         width: 60%;
-        margin-bottom: -40px;
+        margin-bottom: -50px;
     }
 
     .service {
@@ -713,11 +779,25 @@ button {
     }
     
     .happy-clients-item {
-        width: 40%;
+        width: 41%;
         padding: 35px 25px;
         margin: 10px 0;
         font-size: 12px;
     }
+    
+    .circle-information {
+        margin: 3.5% 35%;
+        width: 25%;
+    }
+    
+    .newsletter img {
+        margin: 0 48%;
+    }
+    
+    .just-empty {
+        margin: 10px;
+    }
+    
 }
 
 @media (max-width: 500px) {
@@ -729,6 +809,16 @@ button {
 
     .slider-img {
         margin-bottom: -25px;
+    }
+
+    .slider-point {
+        width: 14%;
+        margin: 60px 42% 0px 42%;
+    }
+
+    .circle-slider {
+        width: 12px;
+        height: 12px;
     }
 
     .service {
@@ -831,7 +921,7 @@ button {
 
     .happy-clients-items {
         width: 90%;
-        margin: 50px 5% 150px 5%;
+        margin: 50px 5% 100px 5%;
     }
     
     .happy-clients-item {
@@ -844,6 +934,30 @@ button {
         width: 35%;
         height: 50%;
     }
+
+    .newsletter-content {
+        background-image: none;
+    }
+
+    .circle-information {
+        padding: 10% 5%;
+        margin: 3.5% 20%;
+        width: 50%;
+    }
+    
+    .newsletter img {
+        margin: 0 44%;
+    }
+    
+    .just-empty {
+        margin: 10px;
+    }
+    
+    .contacts {
+        margin: 5px 0%;
+        color: #394b50;
+    }
+
 }
 
 .show {
