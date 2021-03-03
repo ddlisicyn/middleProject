@@ -45,6 +45,11 @@
     font-size: 14px;
 }
 
+.nav a{
+    color: #868686;
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -52,7 +57,6 @@ button {
 .header nav button:hover {
     background: #ffbb42;
     color: white;
-    transition: .5s;
 }
 
 .nav-toggle {
@@ -584,6 +588,11 @@ button {
         cursor: pointer;
     }
 
+    .nav-toggle-buttons a {
+        color: #868686;
+        text-decoration: none;
+    }
+
     .nav-toggle-buttons p:hover {
         color: #709dca;
     }
@@ -674,8 +683,8 @@ button {
     }
 
     .happy-clients-item img {
-        width: 35%;
-        height: 50%;
+        width: 100%;
+        height: 40%;
     }
 
     .newsletter {
@@ -849,6 +858,12 @@ button {
         margin: 50px 0;
     }
 
+    .left-scrolling, .right-scrolling {
+        width: 50px;
+        height: 50px;
+        background: red;
+    }
+
     .plans-item {
         width: 30%;
         height: 280px;
@@ -931,7 +946,7 @@ button {
     }
 
     .happy-clients-item img {
-        width: 35%;
+        width: 60%;
         height: 50%;
     }
 

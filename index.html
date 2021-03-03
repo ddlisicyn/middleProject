@@ -7,31 +7,31 @@
     <title>Company</title>
 </head>
 <body>
-    <div class="container">
+    <div id="home" class="container">
         <div class="header-wrapper">
             <header class="header">
                 <img src="img/logo.png" alt="logo-image">
                 <nav class="nav">
-                    <button>HOME</button>
-                    <button>SERVICE</button>
-                    <button>ABOUT US</button>
-                    <button>PRICING TABLE</button>
-                    <button>HOW IT WORK</button>
-                    <button>HAPPY CLIENTS</button>
-                    <button>CONTACT US</button>
+                    <button><a href="#home">HOME</a></button>
+                    <button><a href="#service">SERVICE</a></button>
+                    <button><a href="#about">ABOUT US</a></button>
+                    <button><a href="#price">PRICING TABLE</a></button>
+                    <button><a href="#work">HOW IT WORK</a></button>
+                    <button><a href="#clients">HAPPY CLIENTS</a></button>
+                    <button><a href="#contacts">CONTACT US</a></button>
                 </nav>
                 <div class="nav-toggle">
                     Menu
                 </div>
                 <div class="menu hide">
                     <div class="nav-toggle-buttons hide">
-                        <p>HOME</p>
-                        <p>SERVICE</p>
-                        <p>ABOUT US</p>
-                        <p>PRICING TABLE</p>
-                        <p>HOW IT WORK</p>
-                        <p>HAPPY CLIENTS</p>
-                        <p>CONTACT US</p>
+                        <p><a href="#home">HOME</a></p>
+                        <p><a href="#service">SERVICE</a></p>
+                        <p><a href="#about">ABOUT US</a></p>
+                        <p><a href="#price">PRICING TABLE</a></p>
+                        <p><a href="#work">HOW IT WORK</a></p>
+                        <p><a href="#clients">HAPPY CLIENTS</a></p>
+                        <p><a href="#contacts">CONTACT US</a></p>
                     </div>
                 </div>
             </header>
@@ -61,7 +61,8 @@
             <div class="circle-slider"></div>
             <div class="circle-slider"></div>
         </div>
-        <div class="service">
+        <div id="service" class="service">
+            <a></a>
             <div class="service-text">
                 <h2>OUR SERVICES</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -123,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-us">
+        <div id="about" class="about-us">
             <img src="img/aboutUsImg.png" alt="table-img">
             <div class="about-us-text">
                 <h2>ABOUT US</h2>
@@ -136,57 +137,61 @@
                 <button>READ MORE</button>
             </div>
         </div>
-        <div class="price-list">
+        <div id="price" class="price-list">
             <div class="price-list-text">
                 <h2>CHOOSE YOUR PRICE</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="plans">
-                <div class="plans-item">
-                    <p class="plans-item-title">BASIC PLAN</p>
-                    <p class="price"><span class="dollar-sign">$</span>22</p>
-                    <p class="price-month">PER MONTH</p>
-                    <div class="plans-item-text">
-                        <hr>
-                        <p>1 ACCOUNT</p>
-                        <hr>
-                        <p>8 HOURS SUPPORT</p>
-                        <hr>
-                        <p>CUSTOM CLOUD SERVICES</p>
-                        <button>GET STARTED</button>
+                <div class="left-scrolling hide"></div>
+                <div class="plans">
+                    <div class="plans-item">
+                        <p class="plans-item-title">BASIC PLAN</p>
+                        <p class="price"><span class="dollar-sign">$</span>22</p>
+                        <p class="price-month">PER MONTH</p>
+                        <div class="plans-item-text">
+                            <hr>
+                            <p>1 ACCOUNT</p>
+                            <hr>
+                            <p>8 HOURS SUPPORT</p>
+                            <hr>
+                            <p>CUSTOM CLOUD SERVICES</p>
+                            <button>GET STARTED</button>
+                        </div>
+                    </div>
+                    <div class="plans-item">
+                        <p class="plans-item-title">PREMIUM PLAN</p>
+                        <p class="price"><span class="dollar-sign">$</span>42</p>
+                        <p class="price-month">PER MONTH</p>
+                        <div class="plans-item-text">
+                            <hr>
+                            <p>2 ACCOUNT</p>
+                            <hr>
+                            <p>100MB STORAGE</p>
+                            <hr>
+                            <p>CUSTOM CLOUD SERVICES</p>
+                            <button>GET STARTED</button>
+                        </div>
+                    </div>
+                    <div class="plans-item">
+                        <p class="plans-item-title">GOLD PLAN</p>
+                        <p class="price"><span class="dollar-sign">$</span>62</p>
+                        <p class="price-month">PER MONTH</p>
+                        <div class="plans-item-text">
+                            <hr>
+                            <p>8 ACCOUNT</p>
+                            <hr>
+                            <p>24 HOURS SUPPORT</p>
+                            <hr>
+                            <p>CUSTOM CLOUD SERVICES</p>
+                            <button>GET STARTED</button>
+                        </div>
                     </div>
                 </div>
-                <div class="plans-item">
-                    <p class="plans-item-title">PREMIUM PLAN</p>
-                    <p class="price"><span class="dollar-sign">$</span>42</p>
-                    <p class="price-month">PER MONTH</p>
-                    <div class="plans-item-text">
-                        <hr>
-                        <p>2 ACCOUNT</p>
-                        <hr>
-                        <p>100MB STORAGE</p>
-                        <hr>
-                        <p>CUSTOM CLOUD SERVICES</p>
-                        <button>GET STARTED</button>
-                    </div>
-                </div>
-                <div class="plans-item">
-                    <p class="plans-item-title">GOLD PLAN</p>
-                    <p class="price"><span class="dollar-sign">$</span>62</p>
-                    <p class="price-month">PER MONTH</p>
-                    <div class="plans-item-text">
-                        <hr>
-                        <p>8 ACCOUNT</p>
-                        <hr>
-                        <p>24 HOURS SUPPORT</p>
-                        <hr>
-                        <p>CUSTOM CLOUD SERVICES</p>
-                        <button>GET STARTED</button>
-                    </div>
-                </div>
+                <div class="right-scrolling hide"></div>
             </div>
         </div>
-        <div class="how-it-works">
+        <div id="work" class="how-it-works">
             <div class="how-it-works-text">
                 <h2>HOW IT WORKS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -230,7 +235,7 @@
                 <button>GET START NOW</button>
             </div>
         </div>
-        <div class="happy-clients">
+        <div id="clients" class="happy-clients">
             <div class="happy-clients-text">
                 <h2>HAPPY CLIENTS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -290,7 +295,7 @@
                 </div>
             </div>
         </div>
-        <div class="newsletter">
+        <div id="contacts" class="newsletter">
             <div class="newsletter-text">
                 <h2>NEWSLETTER</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
